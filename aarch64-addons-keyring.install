@@ -1,0 +1,7 @@
+post_install() {
+    pacman-key --populate aarch64-addons
+}
+
+post_upgrade() {
+    post_install
+}
